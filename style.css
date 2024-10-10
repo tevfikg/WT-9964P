@@ -1,0 +1,93 @@
+.circle {
+    content: "";
+    width: 35rem;
+    height: 35rem;
+    background:   #9291ff; 
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;;
+
+}
+.img-iphone {
+    max-width: 56%;
+    z-index: 2;
+}
+
+.circle::before {
+    content: "x";
+    color: blue;
+    font-size: 2.25rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: rotate(-12deg);
+}
+.circle::after {
+    content: "*";
+    color: darkmagenta;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: rotate(12deg);
+}
+.testimonial-container {
+    background:  rgba(4, 0, 253, 0.432); 
+}
+.circle-2 {
+    content: "";
+    width: 28rem;
+    height: 28rem;
+    background-color: #9291ff;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.circle-2::before {
+    content: "t";
+    color: blue;
+    font-size: 26px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.circle-2::after{
+    content: "x";
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: rgb(32, 88, 178);
+    font-size: 26px;
+    transform: rotate(15deg);
+}
+.img-phone-2 {
+    max-width: 77%;
+    margin-left: 4rem;
+
+}
+.action-container{
+    position: relative;
+    width: 100%;
+    height: 488px;
+}
+.action-bg {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background-image: url("/assets/aura-colors.png");
+ background-size: cover;
+ background-position: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 488px;
+}
